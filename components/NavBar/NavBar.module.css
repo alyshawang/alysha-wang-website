@@ -1,0 +1,23 @@
+.list{
+    font-family: "Manrope-Variable";
+    font-size: 16px;
+    text-transform: uppercase;
+    list-style: none;
+    text-align: right;
+    margin-top: 40px;
+}
+
+
+@media (max-width: 780px){
+    .list{
+     font-size:10px;
+    }
+    
+   }
+ 
+   @media (max-width: 480px){
+    .list{
+     font-size:8px;
+    }
+    
+   }

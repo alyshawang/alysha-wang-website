@@ -1,0 +1,14 @@
+.footer{
+    background-color: #545454 ;
+    height: 217px;
+    position: relative;
+}
+
+.name{
+    font-family: "Manrope-Variable";
+    font-size: 20px;
+    color:white;
+    position: absolute;
+    bottom:10%;
+    font-weight: 600;
+}

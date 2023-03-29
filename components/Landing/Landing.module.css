@@ -1,0 +1,134 @@
+.container {
+    height: 100dvh;
+    background-color: #E8E4DC;
+    position: relative;
+
+      
+}
+
+
+.text {
+  position: absolute;
+  top: 50%;
+  translate: 0 -60%;
+}
+
+.header{
+    font-family: "Manrope-Variable";
+    font-size: 64px;
+    text-transform: uppercase;
+    color: #545454;
+    font-weight: 800;
+
+  }
+
+ 
+  
+  @media (max-width: 780px){
+   .header{
+    font-size:34px;
+   }
+   
+  }
+
+  @media (max-width: 480px){
+    .header{
+     font-size:22px;
+    }
+    
+   }
+ 
+
+
+  .subheader{
+    font-family: "Manrope-Variable";
+    font-size: 24px;
+    color: #545454;
+
+  }
+
+  @media (max-width: 780px){
+    .subheader{
+     font-size:16px;
+    }
+    
+   }
+
+   @media (max-width: 480px){
+    .subheader{
+     font-size:8.5px;
+    }
+    
+   }
+ 
+
+  .imageContainer {
+    display: flex;
+    gap: 36px;
+    position:absolute; 
+    right: 0%;
+    top: 0%;
+    transition: ease-in-out .3s;
+  }
+
+  .image{
+    
+    height: 100dvh;
+    width: auto;
+    
+  }
+
+  @media (max-width: 1100px) {
+    .imageContainer{
+  
+      right:-15%;
+    }
+  }
+
+  @media (max-width: 940px) {
+    .imageContainer{
+  
+      right:-35%;
+    }
+   }
+
+  @media (max-width: 680px){
+    .imageContainer{
+
+      right:-55%;
+      /* display: none; */
+    }
+  }
+
+  @media (max-width: 600px){
+    .imageContainer{
+
+      right:-70%;
+      /* display: none; */
+    }
+  }
+
+  @media (max-width: 480px){
+    .imageContainer{
+
+      right:-120%;
+      /* display: none; */
+      gap:10px;
+
+    }
+  }
+
+
+
+
+
+  .rectangle{
+    position:absolute; 
+    height: 100dvh;
+    width: auto;
+    right: 30.5%;
+    top: 0%;
+  }
+  
+
+  

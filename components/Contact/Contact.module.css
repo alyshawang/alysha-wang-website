@@ -1,0 +1,87 @@
+.errormessage{
+    font-family: "Manrope-Variable";
+    font-size: 18px;
+    color: #545454;
+    margin-left: 10px;
+}
+
+.input{
+    font-family: "Manrope-Variable";
+    font-size: 18px;
+    color: #545454;
+    width: 600px;
+    border-radius: 12px;
+    padding: 12px 28px;
+    border-color: #A9A9A9;
+    background-color: #FAFAFA;
+    border-width: 1px;
+    border-style: solid;
+
+
+}
+
+.err{
+    margin-bottom: 20px;
+
+}
+
+.title{
+    font-family: "Manrope-Variable";
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #545454;
+    /* margin-top: 84px; */
+    position:relative;
+
+}
+
+.background{
+    background-color: #E8E4DC;
+    height: 750px;
+
+}
+
+.container{
+    display:inline-flex;
+    margin-top: 84px;
+
+}
+
+@media (max-width : 1200px){
+    .container{
+     flex-direction: column;
+    }
+}
+
+.text{
+    margin-top: 15px;
+    position:absolute;
+    right:12%;
+
+}
+
+.resize {
+    resize: none;
+  }
+  
+  .button{
+    font-family: "Manrope-Variable";
+    font-size: 18px;
+    color: #545454;
+    font-weight: 600;
+    border-radius: 25px;
+
+    padding: 12px 32px;
+    border-color: #A9A9A9;
+    background-color: #EDEDED;
+    border-width: 1px;
+    border-style: solid;
+    margin-top: 54px;
+
+  }
+
+  .button:hover{
+    background-color: #A9A9A9;
+
+  
+  }
