@@ -7,7 +7,7 @@
   position:relative;
   display: grid;
   place-content: center;
-  /* scale: 1.05; */
+  scale: 1.025;
 /* overflow:hidden;
 max-width: 100%;
   max-height: 100%;

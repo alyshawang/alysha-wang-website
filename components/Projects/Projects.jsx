@@ -2,6 +2,8 @@ import styles from "./Projects.module.css"
 import Image from "next/image";
 
 import green from "../../public/Images/green.svg";
+import capyy from "../../public/Images/capyy.svg";
+import tank from "../../public/Images/tank.svg";
 
 export default function Projects() {
     return <div className = "m-horizontal"> 
@@ -21,11 +23,11 @@ export default function Projects() {
         <p className = {styles.link}>Read More →</p>
         </a>
         </div>
-        <Image src={green}/>
+        <Image src={tank}/>
         </div>
 
         <div className={styles.projectContainer}>
-        <Image className src={green}/>
+        <Image className src={capyy}/>
         <div>
         <h2 className = {styles.title}>02. Personal Website</h2>
         <p className = {styles.subtext}>A personal website designed in Figma and created with HTML, CSS, Javascript, and React to showcase projects and experiences.</p>
