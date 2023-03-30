@@ -1,0 +1,18 @@
+.container{
+    display: flex;
+    width: 100vdh;
+    justify-content: space-between;
+    margin-top: 200px;
+
+}
+
+.title{
+    font-family: "Manrope-Variable";
+    font-size: 48px;
+    /* position:absolute; */
+    /* top: 40%; */
+    font-weight: 600;
+    color: #545454;
+
+}
+
