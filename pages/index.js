@@ -9,6 +9,7 @@ export default function Home() {
    <>
    <Head>
     <link rel="shortcut icon" href="/Images/capyy.svg" />
+    <title>Alysha Wang</title>
    </Head>
     <Landing />
     <Projects/>

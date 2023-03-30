@@ -1,6 +1,6 @@
 .container{
     display: flex;
-    width: 100vdh;
+    /* width: 100vdh; */
     justify-content: space-between;
     margin-top: 200px;
 

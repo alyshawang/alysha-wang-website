@@ -31,7 +31,7 @@
     margin-bottom: 20px;
     color: #545454;
     /* margin-top: 84px; */
-    position:relative;
+    /* position:relative; */
 
 }
 
@@ -42,21 +42,25 @@
 }
 
 .container{
-    display:inline-flex;
+    display: inline-flex;
     margin-top: 84px;
-
+    width: 100%;
+    justify-content: space-between;
 }
 
 @media (max-width : 1200px){
     .container{
      flex-direction: column;
     }
+    .background{
+        height: 900px;
+    }
 }
 
 .text{
     margin-top: 15px;
-    position:absolute;
-    right:12%;
+    /* position:absolute; */
+    /* right:12%; */
 
 }
 
