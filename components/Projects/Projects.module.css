@@ -8,7 +8,11 @@
     .projectContainer{
 
         flex-direction: column;
+        align-items: center;
     }
+   
+
+    
 }
 
 
