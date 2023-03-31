@@ -23,11 +23,11 @@ export default function Projects() {
         <p className = {styles.link}>Read More →</p>
         </a>
         </div>
-        <Image src={tank}/>
+        <Image className = {styles.image} src={tank}/>
         </div>
 
         <div className={styles.projectContainer}>
-        <Image className src={capyy}/>
+        <Image className={styles.image} src={capyy}/>
         <div>
         <h2 className = {styles.title}>02. Personal Website</h2>
         <p className = {styles.subtext}>A personal website designed in Figma and created with HTML, CSS, Javascript, and React to showcase projects and experiences.</p>
@@ -47,7 +47,7 @@ export default function Projects() {
         <p className = {styles.link}>GitHub Repo →</p>
         </a>
         </div>
-        <Image src={green}/>
+        <Image className = {styles.image} src={green}/>
         </div>
         </div>
 
