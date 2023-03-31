@@ -102,6 +102,6 @@
   .button:hover{
     /* background-color: #A9A9A9; */
     filter: brightness(110%);
-    transform: scale(1.15);
+    transform: scale(1.05);
   
   }
