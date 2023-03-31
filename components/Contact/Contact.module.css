@@ -96,12 +96,12 @@
     border-width: 1px;
     border-style: solid;
     margin-top: 54px;
-
+    transition: transform 0.8s ease;
   }
 
   .button:hover{
     /* background-color: #A9A9A9; */
     filter: brightness(110%);
-
+    transform: scale(1.15);
   
   }

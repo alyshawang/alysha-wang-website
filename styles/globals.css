@@ -47,13 +47,15 @@
 
  ul li{
   margin-bottom: 23px;
-  
+  transition: transform 0.8s ease; /* Add a transition effect for the transform property */
+
  }
 
  ul li:hover {
   text-decoration: underline #52a689;
   text-decoration-thickness: 5px;
   /* transition-duration: 0.4s; */
+  transform: scale(1.15);
 }
 a:-webkit-any-link {
   color: #000000;
