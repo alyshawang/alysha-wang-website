@@ -2,7 +2,7 @@
     display: flex;
     margin-bottom: 298px;
     gap: 109px;
-    opacity: 0; /* Start with 0 opacity */
+    opacity: 0; 
     animation-name: fade-in-drop-in;
     animation-duration: 1s;
     animation-fill-mode: forwards; /* Keeps the final state after the animation ends */
@@ -104,15 +104,14 @@
     font-family: "Manrope-Variable";
     font-size: 20px;
     color: #817B7B;
-
-
-      
+    transition: transform 0.5s ease;
 }
 
 .link:hover{
     text-decoration: underline #52a689;
     text-decoration-thickness: 5px;
-
+    transform: scale(1.05); /* Increase the image size on hover */
+    transform: translateX(5px); /* Move the text 5 pixels to the left on hover */
 }
 
 /* .strong{

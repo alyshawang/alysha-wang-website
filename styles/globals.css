@@ -56,7 +56,9 @@
   text-decoration-thickness: 5px;
   /* transition-duration: 0.4s; */
   transform: scale(1.15);
+  transform: translateX(-5px); /* Move the text 5 pixels to the left on hover */
 }
+
 a:-webkit-any-link {
   color: #000000;
   cursor: pointer;
