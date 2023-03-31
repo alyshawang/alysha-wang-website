@@ -7,7 +7,7 @@ import Image from "next/image";
 
 
 export default function Landing() {
-    return <div className={styles.container}>
+    return <div className = "fade"><div className={styles.container}>
         
         <div className={styles.imageContainer}>
         <NavBar/>
@@ -19,6 +19,7 @@ export default function Landing() {
                         <p className={styles.subheader}>Software Engineering Student @ UWaterloo</p>
                     </div>
                 </div>
+            </div>
             </div>
 }
 

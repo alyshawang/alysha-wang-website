@@ -12,10 +12,11 @@ export default function Projects() {
         <div className ={styles.cards}>
 
         <div className={styles.projectContainer}>
+        <script src="./Animation.jsx"></script>
         <div>
         <h2 className = {styles.title}>01. MOTORIZED FISH-CONTROLLED VEHICLE</h2>
         <p className = {styles.subtext}>An autonomous vehicle controlled by a live fish or joystick using OpenCV, a Raspberry Pi, and an algorithm coded in Node.js. Virtual joystick programmed with HTML and Javascript.</p>
-        <p className = {styles.subtext2}><strong>Technologies:</strong> Javascript, HTML, OpenCV, Node.js, WPILib, Python</p>
+        <p className = {styles.subtext2}><strong className= {styles.strong}>Technologies:</strong> Javascript, HTML, OpenCV, Node.js, WPILib, Python</p>
         <a href="https://github.com/alyshawang/motorized-fish-controlled-vehicle" target="_blank">
         <p className = {styles.link}>GitHub Repo →</p>
         </a>

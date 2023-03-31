@@ -19,9 +19,24 @@
     text-transform: uppercase;
     color: #545454;
     font-weight: 800;
+   
 
   }
  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #52a689; }
+  }
+  
   
   @media (max-width: 780px){
    .header{
@@ -43,7 +58,13 @@
     font-family: "Manrope-Variable";
     font-size: 24px;
     color: #545454;
-
+    border-right: .15em solid #52a689; /* Creates the blinking cursor effect */
+    overflow: hidden; /* Ensures the text is not visible outside the container */
+  white-space: nowrap; /* Keeps the text on a single line */
+  margin: 0 auto; /* Centers the container */
+    animation:
+      typing 2.0s steps(40, end),
+      blink-caret .75s step-end infinite; 
   }
 
   @media (max-width: 780px){
