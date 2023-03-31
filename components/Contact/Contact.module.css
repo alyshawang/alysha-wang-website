@@ -20,6 +20,21 @@
 
 }
 
+.textContainer{
+    display: flex;
+    flex-direction: column;
+    margin-bottom:50px;
+
+}
+
+.contact{
+    font-family: "Manrope-Variable";
+    font-size: 18px;
+    color: #545454;
+    /* margin-top: 5px; */
+
+}
+
 .err{
     margin-bottom: 20px;
 

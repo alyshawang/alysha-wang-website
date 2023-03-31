@@ -53,9 +53,12 @@ export default function Contact() {
     <section className = {styles.background}> 
     <section className = "m-horizontal" >
         <div className = {styles.container}>
+            <div className = {styles.textContainer}>
       <h2 id="contact" className = {styles.title}>
         Contact Me!
       </h2>
+      <p className={styles.contact}>I&apos;d love to get in touch.</p>
+      </div>
       <div className = {styles.text}>
         <div>
           <form
@@ -122,7 +125,6 @@ export default function Contact() {
             <input className={styles.button} type="submit" value="Submit" />
           </form>
         </div>
-        {/* <h1 className="contact">Let&apos;s get in touch!</h1> */}
       </div>
       </div>
 
