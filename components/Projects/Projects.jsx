@@ -12,7 +12,6 @@ export default function Projects() {
         <div className ={styles.cards}>
 
         <div className={styles.projectContainer}>
-        <script src="./Animation.jsx"></script>
         <div>
         <h2 className = {styles.title}>01. MOTORIZED FISH-CONTROLLED VEHICLE</h2>
         <p className = {styles.subtext}>An autonomous vehicle controlled by a live fish or joystick using OpenCV, a Raspberry Pi, and an algorithm coded in Node.js. Virtual joystick programmed with HTML and Javascript.</p>
