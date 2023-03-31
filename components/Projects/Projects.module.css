@@ -18,10 +18,9 @@
       transform: translateY(0);
     }
   }
-  
-  /* Specify when the animation should trigger */
-  .fade-in-drop-in.in-view {
-    opacity: 1; /* If the element is already visible on page load */
+
+  /* .fade-in-drop-in.in-view {
+    opacity: 1; 
   }
   
   .fade-in-drop-in:not(.in-view) {
@@ -30,7 +29,7 @@
   
   .fade-in-drop-in.in-view {
     animation-play-state: running;
-  }
+  } */
 
 @media (max-width : 1300px){
     .projectContainer{
