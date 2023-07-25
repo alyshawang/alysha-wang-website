@@ -5,7 +5,7 @@ import Link from "next/link";
 const links = [
   { link: "#projects", text: "Projects", newPage: false },
   { link: "#contact", text: "Contact", newPage: false },
-  { link: "/resume.pdf", text: "Resume", newPage: true },
+  { link: "/resume2.pdf", text: "Resume", newPage: true },
 ];
 
 export default function  NavBar() {

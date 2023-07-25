@@ -1,11 +1,10 @@
 .container {
-    height: 100dvh;
-    background-color: #E8E4DC;
-    position: relative;
+  height: 100dvh;
+  background-color: #E8E4DC;
+  position: relative;
 
-      
+    
 }
-
 
 .text {
   position: absolute;
