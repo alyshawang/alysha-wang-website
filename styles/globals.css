@@ -60,6 +60,11 @@
   transform: translateX(-5px); /* Move the text 5 pixels to the left on hover */
 }
 
+body{
+  padding:0px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
 a:-webkit-any-link {
   color: #FFE5E7;
   cursor: pointer;

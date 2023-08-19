@@ -53,6 +53,7 @@ export default function Landing() {
 
     return <div className = "fade"><div className={styles.container}>
         <Image className = {styles.image} src={cloud}/>
+        {/* <div className = {styles.topBar}></div> */}
 
         <div className={styles.imageContainer}>
         <NavBar/>

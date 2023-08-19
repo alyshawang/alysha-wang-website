@@ -37,6 +37,16 @@
     }
   }
   
+  .topBar{
+    background-color: #7f9bd8;
+    height: 30px;
+    width: 100dvw;
+    position: absolute; /* Position the top bar absolutely */
+    top: 0; /* Place it at the top of its containing element (which is the container div) */
+    z-index: 1; /* Ensure it appears above other content */
+    font-family: "Manrope-Variable";
+
+  }
   @keyframes blink-caret {
     from, to { border-color: transparent }
     /* 50% { border-color: #52a689; } */
@@ -175,7 +185,7 @@
   top: 0;
   left: 0;
   width: 100vw; /* Take up the whole viewport width */
-  height: 100vh; /* Take up the whole viewport height */
+  height: 100dvh; /* Take up the whole viewport height */
   object-fit: cover;
   z-index: -1; /* Put the image behind other content */
 }

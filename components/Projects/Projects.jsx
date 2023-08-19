@@ -35,6 +35,31 @@ function FadeInSection(props) {
     );
   }
 
+  function FadeInSection2(props) {
+    const [isVisible, setVisible] = React.useState(false);
+    const domRef = React.useRef();
+    
+    React.useEffect(() => {
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            setVisible(true);
+            observer.unobserve(entry.target);
+          }
+        });
+      });
+      
+      observer.observe(domRef.current);
+      return () => observer.unobserve(domRef.current);
+    }, []);
+  
+    return (
+        <div className={`${styles.fadeInSection2} ${isVisible ? styles.isVisible2 : ""}`} ref={domRef}>
+        {props.children}
+      </div>
+    );
+  }
+
 export default function Projects() {
     
 
@@ -44,7 +69,7 @@ export default function Projects() {
         <h1 id="projects" className = {styles.project}>Projects</h1>
         <div className ={styles.cards}>
 
-        <FadeInSection>
+        <FadeInSection >
         <div className={styles.projectContainer}>
         <div>
         <h2 className = {styles.title}>01. MOTORIZED FISH-CONTROLLED VEHICLE</h2>
@@ -61,7 +86,7 @@ export default function Projects() {
         </div>
         </FadeInSection>
 
-        <FadeInSection>
+        <FadeInSection2>
         <div className={styles.projectContainer}>
         <Image className={styles.image} src={capyy}/>
         <div>
@@ -73,7 +98,7 @@ export default function Projects() {
         </a>
         </div>
         </div>
-        </FadeInSection>
+        </FadeInSection2>
 
         <FadeInSection>
         <div className={styles.projectContainer}>
