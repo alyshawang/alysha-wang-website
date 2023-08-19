@@ -78,13 +78,13 @@ export default function Contact() {
     },
   });
   return (
-    <section className = {styles.background}> 
+    <section id="contact" className = {styles.background}> 
     <section className = "m-horizontal" >
         <div className = {styles.container}>
         <FadeInSection>
             <div className = {styles.textContainer}>
       
-      <h2 id="contact" className = {styles.title}>
+      <h2  className = {styles.title}>
         Contact Me!
       </h2>
       <p className={styles.contact}>I&apos;d love to get in touch.</p>

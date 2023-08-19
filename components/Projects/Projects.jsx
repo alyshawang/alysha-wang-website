@@ -66,7 +66,7 @@ export default function Projects() {
     return <div >
                 <FixedNav/>
                 <div className = "m-horizontal">
-        <h1 id="projects" className = {styles.project}>Projects</h1>
+        <h1  className = {styles.project}>Projects</h1>
         <div className ={styles.cards}>
 
         <FadeInSection >

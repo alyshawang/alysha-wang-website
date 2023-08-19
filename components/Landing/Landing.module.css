@@ -213,6 +213,11 @@
 
 }
 
+.loadingScreen{
+  height: 100dvh;
+  background-color: #FFB2B7;
+}
+
 .moving-text-container {
   position: fixed;
   bottom: 0;

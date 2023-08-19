@@ -8,6 +8,7 @@ import React, { useEffect, useRef } from 'react';
 import Image from "next/image";
 
 
+
 // export default function Landing() {
 //     return <div className = "fade"><div className={styles.container}>
         
@@ -51,6 +52,7 @@ export default function Landing() {
         animateText();
     }, []);
 
+    
     return <div className = "fade"><div className={styles.container}>
         <Image className = {styles.image} src={cloud}/>
         {/* <div className = {styles.topBar}></div> */}
@@ -58,7 +60,7 @@ export default function Landing() {
         <div className={styles.imageContainer}>
         <NavBar/>
             </div>
-    <div className={`${styles.movingTextContainer} moving-text-container`} ref={movingTextRef}>
+    <div id="projects" className={`${styles.movingTextContainer} moving-text-container`} ref={movingTextRef}>
                 <h1 className={styles.move}> ALYSHA WANG - ALYSHA WANG - ALYSHA WANG - ALYSHA WANG - ALYSHA WANG - </h1>
             </div>
                     <div className={styles.text}>
@@ -72,79 +74,111 @@ export default function Landing() {
 
         </div>
 }
-// import styles from "./Landing.module.css";
+
+// import styles from "./Landing.module.css"
 // import NavBar from "@/components/NavBar/NavBar";
+// import whale from "../../public/Images/whalee.svg";
+// import phone from "../../public/Images/phone.svg";
 // import cloud from "../../public/Images/cloud.svg";
-// import React, { useEffect, useRef, useState } from "react";
+// import React, { useEffect, useRef ,useState} from 'react';
+// import { motion, useAnimation } from 'framer-motion';
+
 // import Image from "next/image";
 
+
+
+// // export default function Landing() {
+// //     return <div className = "fade"><div className={styles.container}>
+        
+// //         <div className={styles.imageContainer}>
+// //         <NavBar/>
+// //             <Image className = {styles.image} src={whale}/>
+// //     </div>
+// //                 <div className="m-horizontal">
+// //                     <div className={styles.text}>
+// //                         <h1 className={styles.header}>Hi, I&apos;m Alysha</h1>
+// //                         <p className={styles.subheader}>Software Engineering Student @ UWaterloo</p>
+// //                     </div>
+// //                 </div>
+// //             </div>
+// //             </div>
+// // }
+
+
 // export default function Landing() {
-//   const [showWelcomeScreen, setShowWelcomeScreen] = useState(true);
+//     const [isLoading, setIsLoading] = useState(true);
+//   const textControls = useAnimation();
 //   const movingTextRef = useRef(null);
+  
 
 //   useEffect(() => {
-//     const animateText = () => {
-//       const movingText = movingTextRef.current;
-
-//       if (movingText) {
-//         const textWidth = movingText.offsetWidth;
-//         const animationDuration = textWidth * 20;
-
-//         movingText.style.transform = `translateX(2%)`;
-//         movingText.style.transition = "none";
-
-//         // Triggering a reflow to ensure the animation restarts smoothly
-//         movingText.offsetHeight;
-
-//         movingText.style.transform = "translateX(-100%)";
-//         movingText.style.transition = `transform ${animationDuration}ms linear`;
-
-//         setTimeout(() => {
-//           animateText();
-//         }, animationDuration);
-//       }
-//     };
-
-//     if (showWelcomeScreen) {
-//       setTimeout(() => {
-//         setShowWelcomeScreen(false);
-//         animateText();
-//       }, 2000); // Show the welcome screen for 2 seconds
-//     } else {
+//     setTimeout(() => {
+//       setIsLoading(false);
 //       animateText();
+//     }, 3000);
+//   }, []);
+
+//   const animateText = () => {
+//     const movingText = movingTextRef.current;
+
+//     if (movingText) {
+//       const textWidth = movingText.offsetWidth;
+//       const animationDuration = textWidth * 20;
+
+//       movingText.style.transform = `translateX(2%)`;
+//       movingText.style.transition = 'none';
+
+//       movingText.offsetHeight;
+
+//       movingText.style.transform = 'translateX(-100%)';
+//       movingText.style.transition = `transform ${animationDuration}ms linear`;
+
+//       setTimeout(() => {
+//         animateText();
+//       }, animationDuration);
 //     }
-//   }, [showWelcomeScreen]);
+//   };
 
-//   return (
-//     <div className={`fade ${showWelcomeScreen ? styles.blackScreen : ""}`}>
-//       {showWelcomeScreen ? (
-//         <div className={styles.welcomeContainer}>
-//           <h1 className={styles.welcomeText}>Welcome</h1>
-//         </div>
-//       ) : (
-//         <div className={styles.container}>
-//           <Image className={styles.image} src={cloud} />
 
-//           <div className={styles.imageContainer}>
-//             <NavBar />
-//           </div>
+//   const peelTransition = {
+//     hidden: { y: '0%' },
+//     visible: { y: '-100%' },
+//   };
 
-//           <div
-//             className={`${styles.movingTextContainer} moving-text-container`}
-//             ref={movingTextRef}
-//           >
-//             <h1 className={styles.move}>
-//               ALYSHA WANG - ALYSHA WANG - ALYSHA WANG - ALYSHA WANG - ALYSHA WANG -
-//             </h1>
-//           </div>
+    
+//     return<div className={`fade ${isLoading ? 'loading' : ''}`}>
+//     {isLoading ? (
+//       <motion.div
+//         className={styles.loadingScreen}
+//         initial="hidden"
+//         animate="visible"
+//         variants={peelTransition}
+//         onAnimationComplete={() => landingPageControls.start({ opacity: 1 })}
+//       >
+//         <h1 className={styles.loadingText}>Welcome</h1>
+//       </motion.div>
+//     ) : (
+//       <motion.div
+//         className={styles.container}
+//         initial={{ opacity: 0, y: '100vh' }}
+//         animate={{ opacity: 1, y: 0 }}
+//         transition={{ type: 'spring', damping: 15, stiffness: 100 }}
+//       >
+//         <Image className = {styles.image} src={cloud}/>
+//         {/* <div className = {styles.topBar}></div> */}
 
-//           <div className={styles.text}>
-//             <p className={styles.subheader}>
-//               Software Engineering Student @ UWaterloo
-//             </p>
-//           </div>
-//         </div>
+//         <div className={styles.imageContainer}>
+//         <NavBar/>
+//             </div>
+//     <div className={`${styles.movingTextContainer} moving-text-container`} ref={movingTextRef}>
+//                 <h1 className={styles.move}> ALYSHA WANG - ALYSHA WANG - ALYSHA WANG - ALYSHA WANG - ALYSHA WANG - </h1>
+//             </div>
+//                     <div className={styles.text}>
+//                         <p className={styles.subheader}>Software Engineering Student @ UWaterloo</p>
+                        
+                    
+//                 </div>
+//                 </motion.div>
 //       )}
 //     </div>
-//   );
 // }
