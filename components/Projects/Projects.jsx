@@ -1,11 +1,11 @@
 import styles from "./Projects.module.css"
 import Image from "next/image";
 
-import green from "../../public/Images/purple.svg";
-import capyy from "../../public/Images/pink.svg";
+import green from "../../public/Images/yt2.svg";
+import capyy from "../../public/Images/scrape3.svg";
 import tank from "../../public/Images/tank.svg";
 
-import tank2 from "../../public/Images/fish2.svg";
+import tank2 from "../../public/Images/fish3.svg";
 import FixedNav from "@/components/FixedNav/FixedNav";
 
 import React, { useEffect, useRef, useState } from "react";
