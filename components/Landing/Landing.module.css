@@ -9,7 +9,13 @@
 .text {
   position: absolute;
   top: 50%;
-  translate: 0 -60%;
+  translate: 0% -60%;
+}
+
+.text {
+  position: absolute;
+  top: 69%;
+  translate: 200% 0%;
 }
 
 .header{
@@ -33,7 +39,8 @@
   
   @keyframes blink-caret {
     from, to { border-color: transparent }
-    50% { border-color: #52a689; }
+    /* 50% { border-color: #52a689; } */
+    50% { border-color: #FFB2B7; }
   }
   
   
@@ -66,6 +73,9 @@
       blink-caret .75s step-end infinite; 
   }
 
+  .subheader{
+    color: #FFE5E7;
+  }
   @media (max-width: 780px){
     .subheader{
      font-size:16px;
@@ -158,4 +168,71 @@
   }
   
 
-  
+  /* Landing.css */
+
+
+.image {
+  top: 0;
+  left: 0;
+  width: 100vw; /* Take up the whole viewport width */
+  height: 100vh; /* Take up the whole viewport height */
+  object-fit: cover;
+  z-index: -1; /* Put the image behind other content */
+}
+
+
+/* Additional styling for NavBar and text goes here */
+
+/* Landing.module.css */
+@keyframes moveText {
+  0% {
+      transform: translateX(0%);
+  }
+  100% {
+      transform: translateX(100%);
+  }
+}
+
+.moving-text {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  animation: moveText 20s linear infinite; /* Adjust the duration as needed */
+
+}
+
+.moving-text-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.move{
+  font-family: "Manrope-Variable";
+  font-size: 150px;
+  white-space: nowrap; /* Ensure text stays on a single line */
+ 
+  translate: 0 -120%;
+  color: #FFB2B7;
+
+}
+
+@keyframes infiniteScroll {
+  from {transform: translateX(0) }
+  to {transform: translateX(calc(0px - 50%));}
+}
+.moveItems {
+  animation-name: infiniteScroll;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.moveItems {
+  display: flex;
+}

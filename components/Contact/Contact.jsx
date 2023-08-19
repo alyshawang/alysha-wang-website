@@ -2,6 +2,34 @@ import styles from "./Contact.module.css";
 import { useFormik } from "formik";
 import { useState } from "react";
 
+
+import React, { useEffect, useRef } from "react";
+
+function FadeInSection(props) {
+    const [isVisible, setVisible] = React.useState(false);
+    const domRef = React.useRef();
+    
+    React.useEffect(() => {
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            setVisible(true);
+            observer.unobserve(entry.target);
+          }
+        });
+      });
+      
+      observer.observe(domRef.current);
+      return () => observer.unobserve(domRef.current);
+    }, []);
+  
+    return (
+        <div className={`${styles.fadeInSection} ${isVisible ? styles.isVisible : ""}`} ref={domRef}>
+        {props.children}
+      </div>
+    );
+  }
+
 function encode(data) {
   return Object.keys(data)
     .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
@@ -53,20 +81,27 @@ export default function Contact() {
     <section className = {styles.background}> 
     <section className = "m-horizontal" >
         <div className = {styles.container}>
+        <FadeInSection>
             <div className = {styles.textContainer}>
+      
       <h2 id="contact" className = {styles.title}>
         Contact Me!
       </h2>
       <p className={styles.contact}>I&apos;d love to get in touch.</p>
+      
       </div>
+      </FadeInSection>
+      <FadeInSection>
       <div className = {styles.text}>
         <div>
           <form
             name="contact"
             onSubmit={formik.handleSubmit}
             data-netlify="true"
+            className = {styles.form}
           >
             <div>
+              <p className = {styles.pretext}>Name</p>
               <div className = {styles.err}>
                 <input
                   className = {styles.input}
@@ -83,6 +118,7 @@ export default function Contact() {
                   <p className={styles.errormessage}>{formik.errors.name}</p>
                 )}
               </div>
+              <p className = {styles.pretext}>Email</p>
               <div className = {styles.err}>
                 <input
                   className={styles.input}
@@ -99,9 +135,10 @@ export default function Contact() {
                   <p className={styles.errormessage}>{formik.errors.email}</p>
                 )}
               </div>
+              <p className = {styles.pretext}>Message</p>
               <div className = {styles.err}>
                 <textarea
-                  className={`${styles.input} ${styles.resize}`}
+                  className={`${styles.input2} ${styles.resize}`}
                   rows={10}
                   type="text"
                   id="message"
@@ -122,10 +159,11 @@ export default function Contact() {
                 </p>
               )}
             </div>
-            <input className={styles.button} type="submit" value="Submit" />
+            <input className={styles.button} type="submit" value="Send!" />
           </form>
         </div>
       </div>
+      </FadeInSection>
       </div>
 
     </section>

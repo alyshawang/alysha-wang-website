@@ -1,7 +1,9 @@
 .footer{
     background-color: #545454 ;
+    background-color: #1d1e21;
     height: 217px;
     position: relative;
+   
 }
 
 .name{
@@ -11,4 +13,14 @@
     position: absolute;
     bottom:10%;
     font-weight: 600;
+    
 }
+
+.image{
+    width: 100vw; /* Take up the whole viewport width */
+    height: 100%; /* Take up the whole height of the parent (.footer) */
+    object-fit: cover;
+    object-position: center;
+    z-index: -1; /* Put the image behind other content */
+}
+

@@ -1,0 +1,64 @@
+
+
+.list {
+    list-style: none;
+    padding: 20px 0;
+    background-color: #333; /* Set the background color of your navigation bar */
+    background-color: white;
+    opacity: 0; /* Initially hide the navigation bar */
+    pointer-events: none; /* Initially disable click events on the hidden navigation bar */
+    transition: opacity 0.3s ease-in-out; /* Add a smooth transition effect */
+    position: fixed; /* Make it fixed at the top */
+    top: 0; /* Keep it at the top of the viewport */
+    width: 100%; /* Make it full width */
+    display: flex; /* Display the list items side by side */
+    z-index: 999; /* Ensure the navigation bar appears above other content */
+    padding-left: 140px;
+    font-family: "Manrope-Variable";
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add a drop shadow */
+    align-items: center;
+
+  }
+  
+  
+  .list li {
+    display: inline; /* Display the list items side by side */
+    margin: 0 20px; /* Add some spacing between the items */
+    
+  }
+
+  
+  
+  .list a {
+    text-decoration: none;
+    color: #1D1E21;
+    transition: transform 0.8s ease; /* Add a transition effect for the transform property */
+
+  }
+ 
+  .list li:first-child a{
+    color: #FFB2B7 !important;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  
+
+  
+  /* Add more styles as needed */
+  
+  /* components/Navbar.module.css */
+
+  .show {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+
+  
+   .list li:hover {
+    text-decoration: underline #FFB2B7;
+    text-decoration-thickness: 5px;
+    /* transition-duration: 0.4s; */
+    transform: scale(1.15);
+    transform: translateX(5px); /* Move the text 5 pixels to the left on hover */
+  }

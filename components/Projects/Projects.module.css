@@ -2,13 +2,13 @@
     display: flex;
     margin-bottom: 298px;
     gap: 109px;
-    opacity: 0; 
-    animation-name: fade-in-drop-in;
+    opacity: 1; 
+    /* animation-name: fade-in-drop-in;
     animation-duration: 1s;
-    animation-fill-mode: forwards; /* Keeps the final state after the animation ends */
+    animation-fill-mode: forwards; Keeps the final state after the animation ends */
 }
 
-@keyframes fade-in-drop-in {
+/* @keyframes fade-in-drop-in {
     from {
       opacity: 0;
       transform: translateY(-50px);
@@ -17,7 +17,7 @@
       opacity: 1;
       transform: translateY(0);
     }
-  }
+  } */
 
   .image{
     box-shadow: rgba(0,0,0,0) 0px 0px 0px 0px,rgba(0,0,0,0) 0px 0px 0px 0px, rgba(191,191,191,0.298) 6px 6px 7px 0px, rgba(250,250,250,0.25) -4px -4px 6px 0px;
@@ -117,3 +117,21 @@
 /* .strong{
     color: #545454;
 } */
+
+/* Projects.module.css */
+/* Projects.module.css */
+ 
+.fadeInSection {
+  opacity: 0;
+  transform: translateY(20vh);
+  visibility: hidden;
+  transition: opacity 0.5s ease-out, transform 0.6s ease-out;
+  will-change: opacity, visibility;
+}
+
+.fadeInSection.isVisible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+  display: flex; 
+}
