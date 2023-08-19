@@ -23,8 +23,11 @@ export default function FixedNav() {
         } else {
           setShowNavbar(false); // Hide the navigation bar
         }
+        
       }
     };
+    
+    
 
     // Attach the scroll event listener
     window.addEventListener("scroll", handleScroll);

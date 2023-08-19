@@ -1,8 +1,8 @@
 import styles from "./Projects.module.css"
 import Image from "next/image";
 
-import green from "../../public/Images/green.svg";
-import capyy from "../../public/Images/capyy.svg";
+import green from "../../public/Images/purple.svg";
+import capyy from "../../public/Images/pink.svg";
 import tank from "../../public/Images/tank.svg";
 
 import tank2 from "../../public/Images/fish2.svg";
@@ -89,7 +89,7 @@ export default function Projects() {
         <FadeInSection2>
         <div className={styles.projectContainer}>
         <Image className={styles.image} src={capyy}/>
-        <div>
+        <div>   
         <h2 className = {styles.title}>02. E-COMMERCE WEB SCRAPER</h2>
         <p className = {styles.subtext}>A web scraper application, built in Python, that extracts and store product data from Brandy Melville and Stussy using MongoDB and Flask, compiling two websites into one.</p>
         <p className = {styles.subtext2}><strong>Technologies:</strong> Python, Selenium, MongoDB, Flask, Pandas, Javascript, React.js, Next.js, CSS</p>
