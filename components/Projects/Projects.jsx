@@ -79,7 +79,7 @@ export default function Projects() {
         <div className={styles.projectContainer}>
         <div>
         <h2 className = {styles.title}>03. PLAYLIST CONVERTER</h2>
-        <p className = {styles.subtext}> Full-stack application with a Python algorithm to interact with RESTful APIS and a Flask backend, converting user's Spotify playlists to YouTube ones.</p>
+        <p className = {styles.subtext}> Full-stack application with a Python algorithm to interact with RESTful APIS and a Flask backend, converting user&apos;s Spotify playlists to YouTube ones.</p>
         <p className = {styles.subtext2}><strong>Technologies:</strong> Flask, Python, React.js, Javascript, Next.js, CSS </p>
         <a href="https://github.com/alyshawang/math-quiz" target="_blank">
         <p className = {styles.link}>GitHub Repo →</p>
