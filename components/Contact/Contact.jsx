@@ -91,7 +91,7 @@ export default function Contact() {
       
       </div>
       </FadeInSection>
-      <FadeInSection>
+      {/* <FadeInSection> */}
       <div className = {styles.text}>
         <div>
           <form
@@ -163,7 +163,7 @@ export default function Contact() {
           </form>
         </div>
       </div>
-      </FadeInSection>
+      {/* </FadeInSection> */}
       </div>
 
     </section>
