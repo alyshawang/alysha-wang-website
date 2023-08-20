@@ -47,7 +47,7 @@ const Loading = () =>{
         }, 3000); // Adjust the delay time as needed
     
         // Optionally, re-enable scrolling when the component unmounts
-        window.scrollTo(0, 0);
+        history.scrollRestoration = 'manual';
       }, []);
     useEffect(()=>{
         preLoaderAnim()
