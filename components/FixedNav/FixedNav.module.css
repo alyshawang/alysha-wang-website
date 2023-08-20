@@ -27,7 +27,34 @@
     
   }
 
+  .list li {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+ 
+  .list.show li {
+    opacity: 1;
+    transform: translateY(0px);
+
+    transition-delay: 0.2s; /* Adjust the delay as needed for staggered animation */
+  }
+   
+  .list.show li:nth-child(1) {
+    transition-delay: 0s;
+  }
   
+  .list.show li:nth-child(2) {
+    transition-delay: 0.1s;
+  }
+  
+  .list.show li:nth-child(3) {
+    transition-delay: 0.2s;
+  }
+  
+  .list.show li:nth-child(4) {
+    transition-delay: 0.3s;
+  }
   
   .list a {
     text-decoration: none;
