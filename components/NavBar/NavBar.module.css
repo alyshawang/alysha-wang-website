@@ -22,3 +22,35 @@
     }
     
    }
+
+   /* NavBar CSS */
+
+/* Initial state for NavBar */
+
+  
+  /* Add more .bar:nth-child(N) selectors for additional list items */
+  .bar {
+    transform: translateY(100%) !important;
+    opacity: 0;
+    transition: transform 1.8s ease-in-out, opacity 0.5s ease-in-out;
+  }
+  
+  /* Final state for NavBar */
+  .bar.active {
+    transform: translateY(0)  !important;
+    opacity: 1;
+    transition: transform 1.8s ease-in-out, opacity 0.5s ease-in-out;
+  }
+  
+  /* Apply staggered delays to each list item */
+  .bar:nth-child(1) {
+    transition-delay: 0s;
+  }
+  
+  .bar:nth-child(2) {
+    transition-delay: 0.3s;
+  }
+  
+  .bar:nth-child(3) {
+    transition-delay: 0.5s;
+  }

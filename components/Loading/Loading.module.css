@@ -1,4 +1,4 @@
-.loading {
+/* .loading {
     position: fixed;
     top: 0;
     left: 0;
@@ -15,5 +15,39 @@
   .showWelcome {
     transform: translateY(-100%);
     opacity: 0;
+  } */
+  
+  .preloader{
+    height: 100vh;
+    width: 100%;
+    background-color: #1d1e21;
+    color:#FFE5E7;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index:1155;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .textsContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    width: 145px;
+    font-size: 30px;
+    font-weight: 800;
+    overflow: hidden;
+    font-family: "Manrope-Variable";
+    color:#FFE5E7;
+
+  }
+
+  .noScroll {
+    overflow: hidden;
   }
   

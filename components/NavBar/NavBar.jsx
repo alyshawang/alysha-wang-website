@@ -8,12 +8,12 @@ const links = [
   { link: "/resume2.pdf", text: "Resume", newPage: true },
 ];
 
-export default function  NavBar() {
+export default function  NavBar( {loadingComplete }) {
     return <div>
            <ul className ={styles.list}>
            {links.map((navbarlink, index) => (
-          <li key={`link-${index}`}>
-            {navbarlink.newPage ? (
+            <li className={`${styles.bar} ${loadingComplete ? styles.active : ''}`} key={`link-${index}`}>
+    {navbarlink.newPage ? (
               <a href={navbarlink.link} target="_blank" rel="noreferrer">
                 {navbarlink.text}
               </a>

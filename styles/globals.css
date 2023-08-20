@@ -1,9 +1,14 @@
+
+
+
 @font-face {
     font-family: "Manrope-Variable";
     src: url("../public/Fonts/Manrope-VariableFont_wght.ttf") format("truetype");
     font-weight: 300 400 500 600 700 800 900;
     font-display: swap;
     font-style: normal;
+    font-display: fallback;
+
   }
 
   body, html {
@@ -62,8 +67,8 @@
 
 body{
   padding:0px;
-  overflow-y: hidden;
-  overflow-x: hidden;
+  overflow-y: hidden !important;
+  overflow-x: hidden !important;
 }
 a:-webkit-any-link {
   color: #FFE5E7;
@@ -74,3 +79,37 @@ a:-webkit-any-link {
 .smooth-scroll {
   scroll-behavior: smooth !important;
 }
+
+  
+.preloader{
+  height: 100%;
+  width: 100%;
+  background-color: #1d1e21;
+  color:#FFE5E7;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index:1155;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+ 
+}
+
+.texts-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  width: 145px;
+  font-size: 30px;
+  font-weight: 800;
+  overflow: hidden;
+  font-family: "Manrope-Variable";
+  color:#FFE5E7;
+  
+}
+
+
