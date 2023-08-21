@@ -93,7 +93,7 @@ export default function Projects() {
         <h2 className = {styles.title}>02. E-COMMERCE WEB SCRAPER</h2>
         <p className = {styles.subtext}>A web scraper application, built in Python, that extracts and store product data from Brandy Melville and Stussy using MongoDB and Flask, compiling two websites into one.</p>
         <p className = {styles.subtext2}><strong>Technologies:</strong> Python, Selenium, MongoDB, Flask, Pandas, Javascript, React.js, Next.js, CSS</p>
-        <a href="https://github.com/alyshawang/alysha-wang-website" target="_blank">
+        <a href="https://github.com/alyshawang/webscrape" target="_blank">
         <p className = {styles.link}>GitHub Repo →</p>
         </a>
         </div>
@@ -106,7 +106,7 @@ export default function Projects() {
         <h2 className = {styles.title}>03. PLAYLIST CONVERTER</h2>
         <p className = {styles.subtext}> Full-stack application with a Python algorithm to interact with RESTful APIS and a Flask backend, converting user&apos;s Spotify playlists to YouTube ones.</p>
         <p className = {styles.subtext2}><strong>Technologies:</strong> Flask, Python, React.js, Javascript, Next.js, CSS </p>
-        <a href="https://github.com/alyshawang/math-quiz" target="_blank">
+        <a href="https://github.com/alyshawang/ytsp" target="_blank">
         <p className = {styles.link}>GitHub Repo →</p>
         </a>
         </div>

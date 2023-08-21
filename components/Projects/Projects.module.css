@@ -94,7 +94,7 @@
 }
 
 .link:hover {
-  text-decoration: underline #52a689;
+  text-decoration: underline #ffb2b7;
   text-decoration-thickness: 5px;
   transform: scale(1.05);
   transform: translateX(5px);

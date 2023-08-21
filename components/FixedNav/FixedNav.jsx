@@ -6,7 +6,7 @@ const links = [
   { link: "#", text: "Alysha Wang", newPage: false },
   { link: "#projects", text: "Projects", newPage: false },
   { link: "#contact", text: "Contact", newPage: false },
-  { link: "/resume2.pdf", text: "Resume", newPage: true },
+  { link: "/resume3.pdf", text: "Resume", newPage: true },
 ];
 
 export default function FixedNav() {
