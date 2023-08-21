@@ -63,6 +63,9 @@ const Loading = () =>{
                 <span>
                      come.
                 </span>
+                {/* <span>
+                     me.
+                </span> */}
             </div>
         </div>
     )

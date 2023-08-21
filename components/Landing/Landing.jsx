@@ -9,6 +9,7 @@ import Image from "next/image";
 
 import Loading from "../Loading/Loading"
 
+import sig from "../../public/Images/sg.svg";
 
 // export default function Landing() {
 //     return <div className = "fade"><div className={styles.container}>
@@ -66,6 +67,7 @@ export default function Landing() {
         {/* <div className = {styles.topBar}></div> */}
 
         <div className={styles.imageContainer}>
+        {/* <Image src={sig} className={styles.sig}/> */}
         <NavBar loadingComplete={loadingComplete} />
             </div>
     <div id="projects" className={`${styles.movingTextContainer} moving-text-container`} ref={movingTextRef}>

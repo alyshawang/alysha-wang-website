@@ -54,3 +54,9 @@
   .bar:nth-child(3) {
     transition-delay: 0.5s;
   }
+
+  .bar:hover {
+    transform: translateX(-5px) !important;
+    transition: transform 0.7s ease-in-out !important;
+
+  }
