@@ -1,19 +1,19 @@
-import styles from "./Landing.module.css"
+import styles from "./Landing.module.css";
 import NavBar from "@/components/NavBar/NavBar";
 import whale from "../../public/Images/whalee.svg";
 import phone from "../../public/Images/phone.svg";
 import cloud from "../../public/Images/cloud.svg";
-import React, { useEffect, useRef , useState} from 'react';
+import React, { useEffect, useRef, useState } from "react";
 
 import Image from "next/image";
 
-import Loading from "../Loading/Loading"
+import Loading from "../Loading/Loading";
 
 import sig from "../../public/Images/sg.svg";
 
 // export default function Landing() {
 //     return <div className = "fade"><div className={styles.container}>
-        
+
 //         <div className={styles.imageContainer}>
 //         <NavBar/>
 //             <Image className = {styles.image} src={whale}/>
@@ -28,63 +28,71 @@ import sig from "../../public/Images/sg.svg";
 //             </div>
 // }
 
-
 export default function Landing() {
-    const movingTextRef = useRef(null);
-    const [loadingComplete, setLoadingComplete] = useState(false); // State to track loading completion
+  const movingTextRef = useRef(null);
+  const [loadingComplete, setLoadingComplete] = useState(false); // track loading completion
 
-    useEffect(() => {
-        const movingText = movingTextRef.current;
-        const textWidth = movingText.offsetWidth; // Get the width of the moving text container
-        const animationDuration = textWidth * 20; // Adjust animation duration based on text width
+  useEffect(() => {
+    const movingText = movingTextRef.current;
+    const textWidth = movingText.offsetWidth;
+    const animationDuration = textWidth * 20;
 
-        const animateText = () => {
-            movingText.style.transform = `translateX(2%)`; // Start position on the screen
-            movingText.style.transition = 'none';
+    const animateText = () => {
+      movingText.style.transform = `translateX(2%)`; // start position on the screen
+      movingText.style.transition = "none";
 
-            // Triggering a reflow to ensure the animation restarts smoothly
-            movingText.offsetHeight;
+      // reflow
+      movingText.offsetHeight;
 
-            movingText.style.transform = 'translateX(-100%)'; // Move text to the left
-            movingText.style.transition = `transform ${animationDuration}ms linear`;
+      movingText.style.transform = "translateX(-100%)";
+      movingText.style.transition = `transform ${animationDuration}ms linear`;
 
-            setTimeout(() => {
-                animateText();
-            }, animationDuration);
-        };
+      setTimeout(() => {
         animateText();
-        setTimeout(() => {
-            setLoadingComplete(true);
-          }, 2000); // 3 seconds delay for example
-    }, []);
+      }, animationDuration);
+    };
+    animateText();
+    setTimeout(() => {
+      setLoadingComplete(true);
+    }, 2000);
+  }, []);
 
-    
-    return <>       <Loading onLoadingComplete={() => setLoadingComplete(true)} /> {/* Pass a callback to handle loading completion */}
+  return (
+    <>
+      {" "}
+      <Loading onLoadingComplete={() => setLoadingComplete(true)} />{" "}
+      {/* Pass a callback to handle loading completion */}
+      <div className="fade">
+        <div className={styles.container}>
+          <Image className={`${styles.image} cloud`} src={cloud} />
+          {/* <div className = {styles.topBar}></div> */}
 
-    <div className = "fade"><div className={styles.container}>
-      
-    <Image className={`${styles.image} cloud`} src={cloud} />
-        {/* <div className = {styles.topBar}></div> */}
-
-        <div className={styles.imageContainer}>
-        {/* <Image src={sig} className={styles.sig}/> */}
-        <NavBar loadingComplete={loadingComplete} />
-            </div>
-    <div id="projects" className={`${styles.movingTextContainer} moving-text-container`} ref={movingTextRef}>
-                <h1 className={styles.move}> ALYSHA WANG - ALYSHA WANG - ALYSHA WANG - ALYSHA WANG - ALYSHA WANG - </h1>
-            </div>
-                    <div className={styles.text}>
-                    <p
+          <div className={styles.imageContainer}>
+            {/* <Image src={sig} className={styles.sig}/> */}
+            <NavBar loadingComplete={loadingComplete} />
+          </div>
+          <div
+            id="projects"
+            className={`${styles.movingTextContainer} moving-text-container`}
+            ref={movingTextRef}
+          >
+            <h1 className={styles.move}>
+              {" "}
+              ALYSHA WANG - ALYSHA WANG - ALYSHA WANG - ALYSHA WANG - ALYSHA
+              WANG -{" "}
+            </h1>
+          </div>
+          <div className={styles.text}>
+            <p
               className={`${styles.subheader} ${
-                loadingComplete ? styles.typingAnimationStarted : ''
-              }`}>Software Engineering Student @ UWaterloo</p>
-                        
-                    
-                </div>
-                
-            </div>
-            
-
+                loadingComplete ? styles.typingAnimationStarted : ""
+              }`}
+            >
+              Software Engineering Student @ UWaterloo
+            </p>
+          </div>
         </div>
-        </>
+      </div>
+    </>
+  );
 }

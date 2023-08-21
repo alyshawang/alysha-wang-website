@@ -1,109 +1,94 @@
-
-
 .list {
-    list-style: none;
-    padding: 20px 0;
-    background-color: #333; /* Set the background color of your navigation bar */
-    background-color: white;
-    opacity: 0; /* Initially hide the navigation bar */
-    pointer-events: none; /* Initially disable click events on the hidden navigation bar */
-    transition: opacity 0.3s ease-in-out; /* Add a smooth transition effect */
-    position: fixed; /* Make it fixed at the top */
-    top: 0; /* Keep it at the top of the viewport */
-    width: 100%; /* Make it full width */
-    display: flex; /* Display the list items side by side */
-    z-index: 999; /* Ensure the navigation bar appears above other content */
-    padding-left: 140px;
-    font-family: "Manrope-Variable";
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add a drop shadow */
-    align-items: center;
+  list-style: none;
+  padding: 20px 0;
+  background-color: #333;
+  background-color: white;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex; /*list items side by side */
+  z-index: 999; /* ensure the navigation bar appears above other content */
+  padding-left: 140px;
+  font-family: "Manrope-Variable";
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  align-items: center;
+}
 
-  }
-  
-  
-  .list li {
-    display: inline; /* Display the list items side by side */
-    margin: 0 20px; /* Add some spacing between the items */
-    
-  }
+.list li {
+  display: inline; /*list items side by side */
+  margin: 0 20px; /* spacing between the items */
+}
 
-  .list li {
-    opacity: 0;
-    transform: translateY(-20px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-  }
- 
-  .list.show li {
-    opacity: 1;
-    transform: translateY(0px);
+.list li {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
 
-    transition-delay: 0.2s; /* Adjust the delay as needed for staggered animation */
-  }
-   
-  .list.show li:nth-child(1) {
-    transition-delay: 0s;
-  }
-  
-  .list.show li:nth-child(2) {
-    transition-delay: 0.1s;
-  }
-  
-  .list.show li:nth-child(3) {
-    transition-delay: 0.2s;
-  }
-  
-  .list.show li:nth-child(4) {
-    transition-delay: 0.3s;
-  }
-  
-  .list li:nth-child(1) {
-    transition-delay: 0.3s;
-  }
-  
-  .list li:nth-child(2) {
-    transition-delay: 0.2s;
-  }
-  
-  .list li:nth-child(3) {
-    transition-delay: 0.1s;
-  }
-  
-  .list li:nth-child(4) {
-    transition-delay: 0s;
-  }
-  
-  .list a {
-    text-decoration: none;
-    color: #1D1E21;
-    transition: transform 0.8s ease; /* Add a transition effect for the transform property */
+.list.show li {
+  opacity: 1;
+  transform: translateY(0px);
 
-  }
- 
-  .list li:first-child a{
-    color: #FFB2B7 !important;
-    font-weight: 600;
-    font-size: 20px;
-  }
-  
+  transition-delay: 0.2s; /*staggered animation */
+}
 
-  
-  /* Add more styles as needed */
-  
-  /* components/Navbar.module.css */
+.list.show li:nth-child(1) {
+  transition-delay: 0s;
+}
 
-  .show {
-    opacity: 1;
-    pointer-events: auto;
-  }
+.list.show li:nth-child(2) {
+  transition-delay: 0.1s;
+}
 
+.list.show li:nth-child(3) {
+  transition-delay: 0.2s;
+}
 
-  
-   .list li:hover {
-    text-decoration: underline #FFB2B7;
-    text-decoration-thickness: 5px;
-    /* transition-duration: 0.4s; */
-    transform: scale(1.15);
-    transform: translateX(5px); /* Move the text 5 pixels to the left on hover */
-    transition-delay: 0s !important; /* Remove the transition delay on hover */
+.list.show li:nth-child(4) {
+  transition-delay: 0.3s;
+}
 
-  }
+.list li:nth-child(1) {
+  transition-delay: 0.3s;
+}
+
+.list li:nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+.list li:nth-child(3) {
+  transition-delay: 0.1s;
+}
+
+.list li:nth-child(4) {
+  transition-delay: 0s;
+}
+
+.list a {
+  text-decoration: none;
+  color: #1d1e21;
+  transition: transform 0.8s ease;
+}
+
+.list li:first-child a {
+  color: #ffb2b7 !important;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.list li:hover {
+  text-decoration: underline #ffb2b7;
+  text-decoration-thickness: 5px;
+  /* transition-duration: 0.4s; */
+  transform: scale(1.15);
+  transform: translateX(5px);
+  transition-delay: 0s !important; /* remove the transition delay on hover */
+}

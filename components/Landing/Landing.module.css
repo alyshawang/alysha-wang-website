@@ -1,9 +1,7 @@
 .container {
   height: 100dvh;
-  background-color: #E8E4DC;
+  background-color: #e8e4dc;
   position: relative;
-
-    
 }
 
 .text {
@@ -18,193 +16,165 @@
   translate: 200% 0%;
 }
 
-.header{
-    font-family: "Manrope-Variable";
-    font-size: 64px;
-    text-transform: uppercase;
-    color: #545454;
-    font-weight: 800;
-   
+.header {
+  font-family: "Manrope-Variable";
+  font-size: 64px;
+  text-transform: uppercase;
+  color: #545454;
+  font-weight: 800;
+}
 
+@keyframes typing {
+  from {
+    width: 0;
   }
-
-  @keyframes typing {
-    from {
-      width: 0;
-    }
-    to {
-      width: 100%;
-    }
+  to {
+    width: 100%;
   }
-  
-  .topBar{
-    background-color: #7f9bd8;
-    height: 30px;
-    width: 100dvw;
-    position: absolute; /* Position the top bar absolutely */
-    top: 0; /* Place it at the top of its containing element (which is the container div) */
-    z-index: 1; /* Ensure it appears above other content */
-    font-family: "Manrope-Variable";
+}
 
+.topBar {
+  background-color: #7f9bd8;
+  height: 30px;
+  width: 100dvw;
+  position: absolute;
+  top: 0;
+  z-index: 1; /*  appears above other content */
+  font-family: "Manrope-Variable";
+}
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
   }
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    /* 50% { border-color: #52a689; } */
-    50% { border-color: #FFB2B7; }
+  /* 50% { border-color: #52a689; } */
+  50% {
+    border-color: #ffb2b7;
   }
-  
-  
-  @media (max-width: 780px){
-   .header{
-    font-size:34px;
-   }
-   
+}
+
+@media (max-width: 780px) {
+  .header {
+    font-size: 34px;
   }
+}
 
-  @media (max-width: 480px){
-    .header{
-     font-size:22px;
-    }
-    
-   }
- 
+@media (max-width: 480px) {
+  .header {
+    font-size: 22px;
+  }
+}
 
-
-  .subheader{
-    font-family: "Manrope-Variable";
-    font-size: 24px;
-    color: #545454;
-    border-right: .15em solid #52a689; /* Creates the blinking cursor effect */
-    overflow: hidden; /* Ensures the text is not visible outside the container */
+.subheader {
+  font-family: "Manrope-Variable";
+  font-size: 24px;
+  color: #545454;
+  border-right: 0.15em solid #52a689; /* Creates the blinking cursor effect */
+  overflow: hidden; /* Ensures the text is not visible outside the container */
   white-space: nowrap; /* Keeps the text on a single line */
   margin: 0 auto; /* Centers the container */
-opacity: 0;
+  opacity: 0;
+}
+
+.typingAnimationStarted {
+  opacity: 1;
+  animation: typing 2s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+.subheader {
+  color: #ffe5e7;
+}
+@media (max-width: 780px) {
+  .subheader {
+    font-size: 16px;
   }
+}
 
-  .typingAnimationStarted{
-    opacity: 1;
-    animation:
-    typing 2.0s steps(40, end),
-    blink-caret .75s step-end infinite; 
+@media (max-width: 480px) {
+  .subheader {
+    font-size: 8.5px;
   }
+}
 
-  .subheader{
-    color: #FFE5E7;
-  }
-  @media (max-width: 780px){
-    .subheader{
-     font-size:16px;
-    }
-    
-   }
+.imageContainer {
+  display: flex;
+  gap: 36px;
+  position: absolute;
+  right: 0%;
+  top: 0%;
+  transition: ease-in-out 0.3s;
+}
 
-   @media (max-width: 480px){
-    .subheader{
-     font-size:8.5px;
-    }
-    
-   }
- 
+.image {
+  height: 100dvh;
+  width: auto;
+}
 
+@media (max-width: 1100px) {
   .imageContainer {
-    display: flex;
-    gap: 36px;
-    position:absolute; 
-    right: 0%;
-    top: 0%;
-    transition: ease-in-out .3s;
+    right: -15%;
   }
+}
 
-  .image{
-    
-    height: 100dvh;
-    width: auto;
-    
+@media (max-width: 940px) {
+  .imageContainer {
+    right: -35%;
   }
+}
 
-  @media (max-width: 1100px) {
-    .imageContainer{
-  
-      right:-15%;
-    }
+@media (max-width: 680px) {
+  .imageContainer {
+    right: -55%;
+    /* display: none; */
   }
+}
 
-  @media (max-width: 940px) {
-    .imageContainer{
-  
-      right:-35%;
-    }
-   }
-
-  @media (max-width: 680px){
-    .imageContainer{
-
-      right:-55%;
-      /* display: none; */
-    }
+@media (max-width: 600px) {
+  .imageContainer {
+    right: -70%;
+    /* display: none; */
   }
+}
 
-  @media (max-width: 600px){
-    .imageContainer{
-
-      right:-70%;
-      /* display: none; */
-    }
+@media (max-width: 480px) {
+  .imageContainer {
+    right: -100%;
+    /* display: none; */
+    gap: 10px;
   }
+}
 
-  @media (max-width: 480px){
-    .imageContainer{
-
-      right:-100%;
-      /* display: none; */
-      gap:10px;
-
-    }
+@media (max-width: 350px) {
+  .imageContainer {
+    right: -130%;
+    /* display: none; */
+    gap: 10px;
   }
+}
 
-  @media (max-width: 350px){
-    .imageContainer{
-
-      right:-130%;
-      /* display: none; */
-      gap:10px;
-
-    }
-  }
-
-
-
-  .rectangle{
-    position:absolute; 
-    height: 100dvh;
-    width: auto;
-    right: 30.5%;
-    top: 0%;
-  }
-  
-
-  /* Landing.css */
-
+.rectangle {
+  position: absolute;
+  height: 100dvh;
+  width: auto;
+  right: 30.5%;
+  top: 0%;
+}
 
 .image {
   top: 0;
   left: 0;
-  width: 100vw; /* Take up the whole viewport width */
-  height: 100dvh; /* Take up the whole viewport height */
+  width: 100vw;
+  height: 100dvh;
   object-fit: cover;
-  z-index: -1; /* Put the image behind other content */
+  z-index: -1; /*image behind other content */
 }
 
-
-/* Additional styling for NavBar and text goes here */
-
-/* Landing.module.css */
 @keyframes moveText {
   0% {
-      transform: translateX(0%);
+    transform: translateX(0%);
   }
   100% {
-      transform: translateX(100%);
+    transform: translateX(100%);
   }
 }
 
@@ -221,13 +191,12 @@ opacity: 0;
   left: 0;
   width: 100%;
   text-align: center;
-  animation: moveText 20s linear infinite; /* Adjust the duration as needed */
-
+  animation: moveText 20s linear infinite;
 }
 
-.loadingScreen{
+.loadingScreen {
   height: 100dvh;
-  background-color: #FFB2B7;
+  background-color: #ffb2b7;
 }
 
 .moving-text-container {
@@ -239,19 +208,22 @@ opacity: 0;
   overflow: hidden;
 }
 
-.move{
+.move {
   font-family: "Manrope-Variable";
   font-size: 150px;
-  white-space: nowrap; /* Ensure text stays on a single line */
- 
-  translate: 0 -120%;
-  color: #FFB2B7;
+  white-space: nowrap; /*  text stays on a single line */
 
+  translate: 0 -120%;
+  color: #ffb2b7;
 }
 
 @keyframes infiniteScroll {
-  from {transform: translateX(0) }
-  to {transform: translateX(calc(0px - 50%));}
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(0px - 50%));
+  }
 }
 .moveItems {
   animation-name: infiniteScroll;
@@ -263,6 +235,3 @@ opacity: 0;
 .moveItems {
   display: flex;
 }
-
-
-

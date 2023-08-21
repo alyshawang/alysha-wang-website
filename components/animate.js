@@ -52,27 +52,25 @@ export const preLoaderAnim = () => {
       y: 80,
       ease: "expo.easeOut",
     })
-    
+
     .to(
       ".preloader",
       {
         duration: 1.5,
-    y: "-100%", // Animate the loading screen upwards
+        y: "-100%", // Animate the loading screen upwards
         ease: "Power3.easeOut",
         stagger: 0.4,
         onStart: () => {
-            // Start the cloud animation only if it hasn't played yet
-            if (!cloudAnimationPlayed) {
-              animateCloud();
-              cloudAnimationPlayed = true; // Set to true to indicate that the animation has played
-            }
-          }, 
+          // Start the cloud animation only if it hasn't played yet
+          if (!cloudAnimationPlayed) {
+            animateCloud();
+            cloudAnimationPlayed = true; // Set to true to indicate that the animation has played
+          }
         },
+      },
       "-=2"
-      
     )
-    
-  
+
     .from(".landing__main .text", {
       duration: 2,
       // scale: 0,
@@ -111,25 +109,22 @@ export const preLoaderAnim = () => {
       duration: 0,
       css: { display: "none" },
     });
-    
 };
 
 export const animateCloud = () => {
-    const tl = gsap.timeline();
+  const tl = gsap.timeline();
 
-    tl.from(".cloud", {
-      duration: 1.5,
-      delay: 0,
-      y: 100,
-      ease: "Power3.easeOut",
-    }).to(".cloud", {
-      duration: 1,
-      y: 0,
-      ease: "Power3.easeOut",
-    });
-  };
-
-
+  tl.from(".cloud", {
+    duration: 1.5,
+    delay: 0,
+    y: 100,
+    ease: "Power3.easeOut",
+  }).to(".cloud", {
+    duration: 1,
+    y: 0,
+    ease: "Power3.easeOut",
+  });
+};
 
 export const openMenu = () => {
   const tl = gsap.timeline();

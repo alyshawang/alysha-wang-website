@@ -4,20 +4,18 @@ import Contact from "@/components/Contact/Contact";
 import Footer from "@/components/Footer/Footer";
 import Head from "next/head";
 
-
 export default function Home() {
   return (
-   <>
-   <Head>
-    <link rel="shortcut icon" href="/Images/capybra.svg" />
-    <title>Alysha Wang</title>
-    
-   </Head>
-   
-    <Landing />
-    <Projects/>
-    <Contact/>
-    <Footer/>
-   </>
-  )
+    <>
+      <Head>
+        <link rel="shortcut icon" href="/Images/capybra.svg" />
+        <title>Alysha Wang</title>
+      </Head>
+
+      <Landing />
+      <Projects />
+      <Contact />
+      <Footer />
+    </>
+  );
 }

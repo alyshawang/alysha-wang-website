@@ -1,22 +1,21 @@
-.title{
-    font-family: "Manrope-Variable";
-    font-size: 48px;
-    /* position:absolute; */
-    /* top: 40%; */
-    font-weight: 600;
-    color: #545454;
-
+.title {
+  font-family: "Manrope-Variable";
+  font-size: 48px;
+  /* position:absolute; */
+  /* top: 40%; */
+  font-weight: 600;
+  color: #545454;
 }
 
-.container{
-    display: flex;
-    /* width: 100vdh; */
-    justify-content: space-between;
-    margin-top: 200px;
-
+.container {
+  display: flex;
+  /* width: 100vdh; */
+  justify-content: space-between;
+  margin-top: 200px;
 }
 
-.image{
-    box-shadow: rgba(0,0,0,0) 0px 0px 0px 0px,rgba(0,0,0,0) 0px 0px 0px 0px, rgba(191,191,191,0.298) 6px 6px 7px 0px, rgba(250,250,250,0.25) -4px -4px 6px 0px;
-
-  }
+.image {
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(191, 191, 191, 0.298) 6px 6px 7px 0px,
+    rgba(250, 250, 250, 0.25) -4px -4px 6px 0px;
+}
