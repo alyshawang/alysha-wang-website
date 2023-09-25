@@ -125,6 +125,26 @@
 
 }
 
+@media (max-width: 480px) {
+  .title {
+    font-size: 18px;
+  }
+  .subtext{
+    font-size: 15px;
+    width: 300px;
+  }
+  .subtext2{
+    font-size: 15px;
+    width: 300px;
+  }
+  .image{
+    width: 350px;
+    height: auto;
+  }
+  
+
+}
+
 /* .strong{
     color: #545454;
 } */

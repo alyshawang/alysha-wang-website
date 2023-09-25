@@ -49,3 +49,8 @@
 .noScroll {
   overflow: hidden;
 }
+@media (max-width: 480px) {
+  .textsContainer {
+    font-size: 20px;
+  }
+}

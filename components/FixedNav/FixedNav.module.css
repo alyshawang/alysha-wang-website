@@ -102,3 +102,11 @@
   }
  
 }
+@media (max-width: 480px) {
+  .list{
+    font-size: 10px;
+    padding-left: 0px;
+
+  }
+ 
+}

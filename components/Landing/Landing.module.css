@@ -157,6 +157,18 @@
   
 }
 
+@media (max-width: 480px) {
+
+  .text {
+    top: 70%;
+    translate: 20% 0%;
+  }
+  .subheader{
+    font-size: 15px;
+  }
+  
+}
+
 
 
 .typingAnimationStarted {
