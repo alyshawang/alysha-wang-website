@@ -104,3 +104,10 @@ a:-webkit-any-link {
   font-family: "Manrope-Variable";
   color: #ffe5e7;
 }
+
+@media (max-width: 370px) {
+  .texts-container {
+    width: 147px;
+
+  }
+}
