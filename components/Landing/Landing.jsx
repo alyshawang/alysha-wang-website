@@ -69,7 +69,7 @@ export default function Landing() {
 
           <div className={styles.imageContainer}>
             {/* <Image src={sig} className={styles.sig}/> */}
-            <NavBar loadingComplete={loadingComplete} />
+            <NavBar className = {styles.bar}loadingComplete={loadingComplete} />
           </div>
           <div
             id="projects"

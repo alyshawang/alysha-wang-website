@@ -63,7 +63,7 @@
 .background {
   background-color: #e8e4dc;
   background-color: #dcdde8;
-  height: 800px;
+  height: 850px;
 }
 
 .container {
@@ -78,7 +78,7 @@
     flex-direction: column;
   }
   .background {
-    height: 900px;
+    height: 1050px;
   }
 }
 
@@ -142,4 +142,33 @@
   border-radius: 12px;
   border: 1px solid #ccc;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 680px) {
+  .title{
+    font-size: 30px;
+  }
+  .contact{
+    font-size: 15px;
+  }
+  .pretext{
+    font-size: 15px;
+  }
+  .input{
+    font-size: 15px;
+    width: 300px;
+  }
+  .input2{
+    font-size: 15px;
+    width: 300px;
+  }
+  .errormessage{
+    font-size: 15px;
+
+  }
+  .button{
+    font-size: 15px;
+    width: 360px;
+  }
+  
 }

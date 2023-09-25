@@ -92,3 +92,13 @@
   transform: translateX(5px);
   transition-delay: 0s !important; /* remove the transition delay on hover */
 }
+
+
+@media (max-width: 680px) {
+  .list{
+    font-size: 15px;
+    padding-left: 0px;
+
+  }
+ 
+}

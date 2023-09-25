@@ -24,13 +24,13 @@ html {
 
 @media (min-width: 480px) {
   .m-horizontal {
-    margin: 0px 28px;
+    margin: 0px 20px;
   }
 }
 
 @media (min-width: 640px) {
   .m-horizontal {
-    margin: 0px 36px;
+    margin: 0px 40px;
   }
 }
 

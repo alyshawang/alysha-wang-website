@@ -21,3 +21,20 @@
   object-position: center;
   z-index: -1; /* image behind other content */
 }
+
+@media (max-width: 1180px) {
+ 
+  .footer{
+  height: 150px;
+  }
+}
+@media (max-width: 680px) {
+  .name{
+    font-size: 15px;
+
+  }
+  .footer{
+  height: 150px;
+}
+  
+}

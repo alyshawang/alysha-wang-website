@@ -15,7 +15,7 @@
     }
     to {
       opacity: 1;
-      transform: translateY(0);
+      transform: transl88ateY(0);
     }
   } */
 
@@ -57,13 +57,6 @@
   text-align: center;
   color: #545454;
 }
-
-@media (max-width: 780px) {
-  .project {
-    font-size: 30px;
-  }
-}
-
 .title {
   font-family: "Manrope-Variable";
   font-size: 36px;
@@ -71,6 +64,10 @@
   margin-bottom: 16px;
   color: #545454;
 }
+
+
+
+
 
 .subtext {
   font-family: "Manrope-Variable";
@@ -98,6 +95,34 @@
   text-decoration-thickness: 5px;
   transform: scale(1.05);
   transform: translateX(5px);
+}
+
+@media (max-width: 680px) {
+  .project {
+    font-size: 30px;
+  }
+  .title{
+    font-size: 20px;
+
+  }
+  .subtext{
+    font-size: 15px;
+    width: 400px;
+  }
+  .subtext2{
+    font-size: 15px;
+    width: 400px;
+  }
+  .link{
+    font-size: 15px;
+
+  }
+  .image{
+    width: 400px;
+    height: auto;
+  }
+  
+
 }
 
 /* .strong{

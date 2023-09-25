@@ -32,7 +32,17 @@
     width: 100%;
   }
 }
+.subheader {
+  font-family: "Manrope-Variable";
+  font-size: 24px;
+  color: #545454;
+  border-right: 0.15em solid #52a689; /* Creates the blinking cursor effect */
+  overflow: hidden; /* Ensures the text is not visible outside the container */
+  white-space: nowrap; /* Keeps the text on a single line */
+  margin: 0 auto; /* Centers the container */
+  opacity: 0;
 
+}
 .topBar {
   background-color: #7f9bd8;
   height: 30px;
@@ -52,29 +62,102 @@
     border-color: #ffb2b7;
   }
 }
+@media (max-width: 1400px) {
 
-@media (max-width: 780px) {
+  .text {
+    top: 69%;
+    translate: 170% 0%;
+  }
+  
+}
+@media (max-width: 1300px) {
+
+  .text {
+    top: 69%;
+    translate: 140% 0%;
+  }
+  
+}
+@media (max-width: 1200px) {
+
+  .text {
+    top: 69%;
+    translate: 120% 0%;
+  }
+  
+}
+@media (max-width: 1100px) {
+
+  .text {
+    top: 69%;
+    translate: 100% 0%;
+  }
+  
+}
+@media (max-width: 1000px) {
+
+  .text {
+    top: 69%;
+    translate: 80% 0%;
+  }
+  
+}
+@media (max-width: 900px) {
+
+  .text {
+    top: 69%;
+    translate: 60% 0%;
+  }
+}
+@media (max-width: 800px) {
+
+  .text {
+    top: 69%;
+    translate: 40% 0%;
+  }
+  
+}
+
+@media (max-width: 680px) {
   .header {
     font-size: 34px;
   }
-}
+  .text {
+    top: 73%;
+    translate: 50% 0%;
 
-@media (max-width: 480px) {
-  .header {
-    font-size: 22px;
   }
+  .subheader{
+    font-size: 20px;
+  }
+  
+}
+@media (max-width: 600px) {
+  .text {
+    top: 73%;
+    translate: 30% 0%;
+
+  }
+  .subheader{
+    font-size: 20px;
+  }
+  
+}
+@media (max-width: 550px) {
+  .header {
+    font-size: 34px;
+  }
+  .text {
+    top: 73%;
+    translate: 65% 0%;
+  }
+  .subheader{
+    font-size: 15px;
+  }
+  
 }
 
-.subheader {
-  font-family: "Manrope-Variable";
-  font-size: 24px;
-  color: #545454;
-  border-right: 0.15em solid #52a689; /* Creates the blinking cursor effect */
-  overflow: hidden; /* Ensures the text is not visible outside the container */
-  white-space: nowrap; /* Keeps the text on a single line */
-  margin: 0 auto; /* Centers the container */
-  opacity: 0;
-}
+
 
 .typingAnimationStarted {
   opacity: 1;
@@ -84,17 +167,18 @@
 .subheader {
   color: #ffe5e7;
 }
-@media (max-width: 780px) {
+
+/* @media (max-width: 780px) {
   .subheader {
     font-size: 16px;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 680px) {
   .subheader {
     font-size: 8.5px;
   }
-}
+} */
 
 .imageContainer {
   display: flex;
@@ -114,12 +198,14 @@
   .imageContainer {
     right: -15%;
   }
+  
 }
 
 @media (max-width: 940px) {
   .imageContainer {
     right: -35%;
   }
+ 
 }
 
 @media (max-width: 680px) {
@@ -217,6 +303,7 @@
   color: #ffb2b7;
 }
 
+
 @keyframes infiniteScroll {
   from {
     transform: translateX(0);
@@ -235,3 +322,10 @@
 .moveItems {
   display: flex;
 }
+
+@media (max-width: 680px) {
+  .move{
+    font-size: 125px;
+  }
+}
+
