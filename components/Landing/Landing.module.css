@@ -161,10 +161,10 @@
 
   .text {
     top: 70%;
-    translate: 20% 0%;
+    translate: 100% 0%;
   }
   .subheader{
-    font-size: 15px;
+    font-size: 9px;
   }
   
 }
