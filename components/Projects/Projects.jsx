@@ -78,9 +78,6 @@ export default function Projects() {
         <a href="https://github.com/alyshawang/motorized-fish-controlled-vehicle" target="_blank">
         <p className = {styles.link}>GitHub Repo →</p>
         </a>
-        <a href="readmore">
-        <p className = {styles.link}>Read More →</p>
-        </a>
         </div>
         <Image className = {styles.image} src={tank2}/>
         </div>
